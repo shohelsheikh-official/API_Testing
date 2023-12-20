@@ -17,14 +17,14 @@ import qtriptest.pages.RegisterPage;
 public class testCase_01 {
     static RemoteWebDriver driver;
 
-    @BeforeTest()
+   // @BeforeTest()
     public static void createDriver()  throws MalformedURLException {
         // IMPORTANT!: Enter the Driver Location here
         DriverSingleton sbc1= DriverSingleton.getInstanceOfSingletonBrowserClass();
 		driver = sbc1.getDriver();
     }
 
-    @Test(description = "Verify user registration - login - logout", dataProvider = "data-provider" , dataProviderClass = DP.class, groups = {"Login Flow"})
+   // @Test(description = "Verify user registration - login - logout", dataProvider = "data-provider" , dataProviderClass = DP.class, groups = {"Login Flow"})
     public static void TestCase01(String UserName, String Password) throws InterruptedException {
         HomePage home = new HomePage(driver);
         home.gotoHomePage();
@@ -46,7 +46,7 @@ public class testCase_01 {
         home.gotoHomePage();
     }
 
-    @AfterSuite
+   // @AfterSuite
     public static void quitDriver() throws InterruptedException
     {
         driver.quit();
