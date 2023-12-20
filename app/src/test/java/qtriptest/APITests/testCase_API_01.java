@@ -19,7 +19,7 @@ import com.github.javafaker.Faker;
 
 public class testCase_API_01 {
 
-    @Test(groups = {"API testing"})
+    @Test(groups = {"API"})
     public void API_01() {
 
         Faker f = new Faker();

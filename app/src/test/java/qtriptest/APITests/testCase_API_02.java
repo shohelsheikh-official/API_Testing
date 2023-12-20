@@ -21,7 +21,7 @@ import java.util.Random;
 import java.util.UUID;
 public class testCase_API_02 {
 
-    @Test(groups = {"API testing"})
+    @Test(groups = {"API"})
     public void API_02(){
 
         List<Object> repsonseArray = new ArrayList<>();

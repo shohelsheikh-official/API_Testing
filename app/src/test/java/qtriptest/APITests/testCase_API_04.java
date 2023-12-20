@@ -14,7 +14,7 @@ import com.github.javafaker.Faker;
 
 public class testCase_API_04 {
 
-    @Test(groups = {"API testing"})
+    @Test(groups = {"API"})
     public void API_04() {
         Faker f = new Faker();
         String name = f.name().firstName() + "@gmail.com";
