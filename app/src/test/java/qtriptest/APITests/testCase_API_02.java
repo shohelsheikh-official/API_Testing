@@ -40,11 +40,6 @@ public class testCase_API_02 {
             if(repsonseArray.size() == 1 && responseBody.contains("100+ Places") && searchResponse.getStatusCode() == 200){
                 searchResponse.then().assertThat().body(JsonSchemaValidator.matchesJsonSchema(new File("app/src/test/resources/schema.json"))); 
             }
-
-
-        
-
-
     }
 
     private String getRandomElement(String[] cities){

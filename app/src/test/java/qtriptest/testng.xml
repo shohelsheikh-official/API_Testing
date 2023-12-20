@@ -2,12 +2,17 @@
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Test case suite for QTRIP application">
   <test name = "Executing Test Cases for QTRIP">
-          <classes>          
+    <groups>
+         <run>
+         <include name = "API"></include>
+         </run>
+    </groups>   
+          <!-- <classes>          
                   <class name="qtriptest.APITests.testCase_API_01"></class>
                   <class name="qtriptest.APITests.testCase_API_02"></class>
                   <class name="qtriptest.APITests.testCase_API_04"></class>
                   <class name="qtriptest.APITests.testCase_API_04"></class>
-          </classes>
+          </classes> -->
   </test>
   </test> <!-- Test -->
 </suite>
